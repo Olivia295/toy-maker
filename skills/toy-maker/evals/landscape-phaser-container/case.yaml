@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: landscape-phaser-container
+expected_outcome: |
+  A src/toy-container.ts that uses the Toy SDK container APIs: listens with onContainerChange before calling
+  setContainerMode({orientation:'landscape', immersive:true}), confirms success from the state rather than the
+  promise, uses safeArea to position the pause button, refreshes Phaser scale on viewport changes with a delayed
+  retry, checks isSupport and falls back for web/old clients, plus main.ts integration instructions.

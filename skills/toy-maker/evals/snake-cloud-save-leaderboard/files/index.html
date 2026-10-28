@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>像素贪吃蛇</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="hud">分数 <span id="score">0</span> · 最高 <span id="best">0</span></div>
+  <canvas id="board" width="320" height="320"></canvas>
+  <div id="skins">
+    <button data-skin="green">经典绿</button>
+    <button data-skin="pink" disabled>樱花粉（最高分 50 解锁）</button>
+    <button data-skin="gold" disabled>土豪金（最高分 100 解锁）</button>
+  </div>
+  <button id="start">开始</button>
+  <div id="over" hidden>游戏结束！<button id="again">再来一局</button></div>
+  <script src="./game.js"></script>
+</body>
+</html>

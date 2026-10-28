@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: fortune-card-compliance
+expected_outcome: |
+  design.md identifies each compliance problem (self-entered nickname, free-text wish shown on a card, follow-gating
+  the whole result, afdian link, QQ group / off-site traffic) and proposes a compliant redesign using Toy SDK
+  capabilities (getUserProfile or preset names, checkInputSafety or preset wishes, follow as an optional bonus,
+  navigate to the author's B站 space for charging, share/getQrCode/saveImageToAlbum with isSupport fallbacks).

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: idea-to-final-plan
+expected_outcome: |
+  toy-plan.md picks a non-game type (tool/guide) with reasons, cites real Toy-square works with links, play counts and fetch date, rewrites the goal with measurable metrics, plans video-Toy linkage, uses cloud save within limits, and lists compliance risks (IP assets, no external wiki links).

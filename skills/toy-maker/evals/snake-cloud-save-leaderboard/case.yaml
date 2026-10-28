@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: snake-cloud-save-leaderboard
+expected_outcome: |
+  The snake game is modified to load the official Toy SDK in index.html, persist best score and skin via
+  toy cloud storage (batched writes at key moments, not on every food), submit the score once at game over,
+  show a weekly top-20 leaderboard plus the player's rank (using ranked), handle not-logged-in and 307044
+  rate-limit errors gracefully, and keep working locally without the SDK.
+context:
+  scaffold_script: place-files.sh

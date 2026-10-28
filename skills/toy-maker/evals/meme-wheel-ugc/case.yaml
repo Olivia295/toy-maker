@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: meme-wheel-ugc
+expected_outcome: |
+  Explains fan-added memes visible to everyone is a UGC red line, proposes compliant alternatives (author-curated from comments, presets, local-only custom wheels), references existing square works like the meme wheel, and gives growth advice tied to meme timing and videos.

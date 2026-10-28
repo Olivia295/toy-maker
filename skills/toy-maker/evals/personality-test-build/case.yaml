@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: personality-test-build
+expected_outcome: |
+  A publishable personality test with the Toy SDK, 12 questions and 8 results, result card saved via saveImageToAlbum with isSupport fallback, QR code via getQrCode, no free-text nickname, comment-bait on the result page, passing the toy_maker_check script.
