@@ -47,8 +47,8 @@ toy-maker 把这些知识、数据和流程打包成一个 Skill，装上之后�
 <tr>
 <td valign="top">
 
-**🎯 方案定稿**<br>
-想法确定后，按「目标背后的目标 → 像做过爆款的人那样补齐细节 → 多角色挑错」走一遍，产出带真实对标链接、量化目标、视频联动、SDK 清单和合规预审的 `toy-plan.md`。
+**🎯 方案定稿 + 官方运营方法**<br>
+想法确定后，按「目标背后的目标 → 像做过爆款的人那样补齐细节 → 多角色挑错」走一遍，产出带真实对标链接、量化目标、视频联动、SDK 清单和合规预审的 `toy-plan.md`；运营部分直接用官方《Toy 运营白皮书》的数据（如「可晒产物」破 10 万命中率 62%、横屏挂链导流 8.6 倍、四阶平台助推门槛）。
 
 </td>
 <td valign="top">
@@ -164,6 +164,7 @@ flowchart LR
     E --> F[合规自查<br>toy_maker_check.py]
     F --> G[发布留档包<br>make_release.py]
     G --> H[官方 toy CLI<br>预览 → 确认 → 提交审核]
+    H --> I[发布后运营<br>官方运营白皮书]
 ```
 
 | 步骤 | AI 会做什么 |
@@ -175,6 +176,7 @@ flowchart LR
 | 自查 | 静态扫描 SDK 用法和合规风险，ERROR 先修，WARN 逐条讲给你听 |
 | 打包留档 | 生成三种上传形态 + 封面图标 + 源码 + `发布信息.md` + `manifest.json` |
 | 发布 | 交给官方 `toy` CLI：先出预览链接，你明确确认后才提交审核 |
+| 运营 | 按官方运营白皮书：转公开发布、横屏演示 + 竖屏切片 + 小站帖挂链、对照四阶助推门槛、每次迭代重发视频 |
 
 ## 仓库里有什么
 
@@ -184,6 +186,7 @@ skills/toy-maker/
 ├── references/
 │   ├── hit-patterns.md          # 爆款规律：赛道格局、首屏、题材、SDK 使用、互动信号、长期运营
 │   ├── playbooks/               # 7 类 Toy 手册：test / tool / game / interactive-play / guide / collection / meme-generator
+│   ├── ops-whitepaper.md        # 官方《Toy 运营白皮书》要点：选题、传播、四阶助推、长线运营、运营清单
 │   ├── final-plan.md            # 方案定稿流程与模板
 │   ├── recipes.md               # 13 个 SDK 功能的写法
 │   ├── platform-rules.md        # 官方 FAQ 的开发者向整理（打包、兼容、数据、合规、审核、增长）
@@ -293,7 +296,7 @@ release/up-persona-20261029-0014/
 
 - [Toy 平台介绍](https://www.bilibili.com/toy/intro) · [Toy 广场](https://www.bilibili.com/btoy/square)
 - [发布指南](https://www.bilibili.com/toy/publish/guide) · [使用协议](https://www.bilibili.com/toy/publish/agreement) · [开放能力（SDK / CLI）](https://www.bilibili.com/toy/publish/sdk)
-- [《Toy 开发者 FAQ》](https://www.bilibili.com/opus/1241171666570051585)
+- [《Toy 开发者 FAQ》](https://www.bilibili.com/opus/1241171666570051585) · [《Toy 运营白皮书》](https://www.bilibili.com/toy/toy-ops-whitepaper/index.html)
 - 官方发布 skill 与 CLI 封装：[bilibili/toy](https://github.com/bilibili/toy)
 
 ## 许可证

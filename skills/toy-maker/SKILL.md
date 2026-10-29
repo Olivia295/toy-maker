@@ -16,6 +16,7 @@ Toy 是 B站的互动内容形态：一个跑在 `https://www.bilibili.com/toy/<
 | `scripts/fetch_square.py` | 每次开始构思或给建议前跑一次，拿 Toy 广场当下数据（零依赖、免登录）。 |
 | `references/hit-patterns.md` | 解读广场数据的框架：赛道格局、首屏、题材、头部作品的 SDK 用法、各类型的互动信号、长期运营。 |
 | `references/playbooks/<类型>.md` | 确定类型后读对应的一份：`test` 测试、`tool` 工具、`game` 游戏、`interactive-play` 互动玩法、`guide` 攻略、`collection` 合集、`meme-generator` 整活/生成器/模拟器。 |
+| `references/ops-whitepaper.md` | 官方《Toy 运营白皮书》（https://www.bilibili.com/toy/toy-ops-whitepaper/index.html）：选题命中率、发布传播与导流倍数、四阶平台助推、长线运营与复玩率、官方 6 条运营清单。出方案、谈增长、发布后运营时读。 |
 | `references/final-plan.md` | 想法确定、动手前：Toy 版「高度-深度-广度」定稿流程和方案模板。 |
 | `references/showcase.md` / `data/showcase.json` | 内置的广场快照（实时抓取失败时用，注意日期）。 |
 | `references/sdk-api.md` | 写任何 `toy.xxx()` 调用前。官方 SDK 全文（参数、返回值、限制、环境支持表、频率限制）。**API 细节以它为准，别凭记忆。**（官方原文，随附版本下载于 2026-10-28，见下方「官方 SDK 文档」） |
@@ -174,6 +175,14 @@ python3 "<toy-maker-dir>/scripts/make_release.py" <dist目录> --title "<Toy 名
 - 首发建议「链接访问」测试，确认后再改「所有人可见」（公开才进 Toy 广场）。审核通常 10 分钟内；新建 Toy 的封面图标也要审核，期间可能不显示。
 - 封面建议 4:3（如 1200×900），图标 PNG/JPEG ≤512KB、≤1024px，二者是不同字段。
 - 发布后：绑定本人视频（一个视频只能绑一个 Toy），推荐一条横屏 + 多条竖屏切片；多次修改攒一起更新以减少审核次数。
+
+### 9. 发布后运营
+
+发布不是终点。按 `references/ops-whitepaper.md` 帮开发者把运营排上日程：
+- 自测完**转公开发布**，自动生成的动态别删；
+- 1 条 1 分钟以上横屏演示（导流 8.6 倍）+ 数条 15–30 秒竖屏切片（5.5 倍）+ 1 篇带图小站帖，视频绑定 Toy，简介和置顶评论贴带 `/index.html` 的完整链接；
+- 按四阶助推（1 万 / 5 万 / 10 万）对照数据，到了门槛做对应动作（如 1 万后带视频找运营争取联合投稿）；
+- 每次迭代重发一条视频；最后用官方 6 条运营清单逐项过一遍。
 
 ## 遇到问题时的排查顺序
 
